@@ -1,139 +1,107 @@
+# HR Dashboard Project 
 
-# **HR Dashboard Project Documentation**
+## Project Overview
 
-## **1. Project Overview**
-   - **Project Title**: HR Dashboard for Monitoring Employee Retention, Productivity, and Diversity
-   - **Project Purpose**: This dashboard provides HR professionals with insights into key workforce metrics, enabling better workforce planning and talent management by tracking trends in employee headcount, productivity, satisfaction, and diversity.
+This HR dashboard was designed to monitor key employee metrics that are critical for workforce planning and talent management. The dashboard tracks:
+- Employee retention and headcount trends
+- Productivity and satisfaction scores
+- Workforce diversity metrics
 
----
-
-## **2. Objectives**
-   - To track and visualize headcount trends over time.
-   - To monitor employee satisfaction and productivity metrics.
-   - To assess and understand diversity in the organization, including age and gender representation.
-   - To aid HR teams in workforce planning by identifying trends and areas of focus for talent retention and management.
+The dashboard provides HR teams with a visual summary of employee data, enabling informed decision-making to support retention, improve employee satisfaction, and maintain a balanced workforce.
 
 ---
 
-## **3. Data Description**
-   - **Data Source**: Synthetic HR dataset created for dashboard demonstration.
-   - **Number of Columns**: 8
-   - **Number of Rows**: 50
-   - **Key Columns**:
-      - **Employee ID**: Unique identifier for each employee.
-      - **Department**: Department in which the employee works (e.g., Sales, HR, IT).
-      - **Tenure**: Number of years the employee has been with the company.
-      - **Satisfaction Score**: Score indicating employee satisfaction on a scale of 1–10.
-      - **Performance Score**: Score representing employee performance, ranging from 1–10.
-      - **Gender**: Gender of the employee.
-      - **Age Group**: Age range category (e.g., <30, 30-40).
-      - **Date of Hire**: Date when the employee was hired.
+## Data Source
+
+The data used in this dashboard contains the following columns:
+1. **Employee_ID**: Unique identifier for each employee
+2. **Department**: The department each employee is assigned to (Finance, HR, IT, Marketing, Sales)
+3. **Satisfaction_Score**: Employee’s satisfaction level on a scale of 1 to 5
+4. **Performance_Score**: Employee’s performance level on a scale of 1 to 5
+5. **Gender**: Gender of each employee
 
 ---
 
-## **4. Project Scope and Limitations**
-   - **Scope**: Dashboard focuses on high-level HR metrics, such as retention rates, satisfaction, productivity, and diversity.
-   - **Limitations**: Synthetic data may not fully capture complex workforce dynamics or account for all variables in real-world HR data.
+## Dashboard Components
+
+### 1. Sum of Performance Score by Department (Pie Chart)
+
+**Description**: This pie chart shows the total Performance Score for each department, providing insight into how departments are performing relative to each other.
+
+**Purpose**: Helps identify departments with high or low performance, potentially highlighting areas where additional support may be needed.
 
 ---
 
-## **5. Dashboard Design**
+### 2. Sum of Satisfaction Score by Department (Bar Chart)
 
-### **5.1 Visual Components**
+**Description**: This bar chart displays the cumulative Satisfaction Score per department, giving an overview of how satisfied employees are across different departments.
 
-1. **Line Chart**: **Headcount Trends Over Time**
-   - **Purpose**: To illustrate how the employee headcount changes over time.
-   - **X-Axis**: Date (in months or quarters).
-   - **Y-Axis**: Headcount.
-   - **Details**: This chart is valuable for identifying periods of significant workforce changes, like high turnover or growth.
+**Purpose**: Highlights satisfaction trends by department, allowing HR to focus on departments with lower satisfaction scores for improvement initiatives.
 
-2. **Bar Chart**: **Department-Wise Headcount**
-   - **Purpose**: Displays the distribution of employees across various departments.
-   - **X-Axis**: Department.
-   - **Y-Axis**: Employee Count.
-   - **Details**: Visualizes department sizes, identifying concentration of workforce resources.
-
-3. **Gauge Chart**: **Overall Employee Satisfaction**
-   - **Purpose**: Shows the overall employee satisfaction on a 1–10 scale.
-   - **Data to Use**: Average Satisfaction Score.
-   - **Details**: Quick visualization of overall morale. Thresholds for low, medium, and high satisfaction provide easy interpretation.
-
-4. **Pie Chart**: **Gender Diversity**
-   - **Purpose**: Shows the gender distribution of the workforce.
-   - **Data to Use**: Gender categories and employee counts.
-   - **Details**: A simple representation of diversity within the company, broken down by gender.
-
-5. **Stacked Bar Chart**: **Age Diversity Across Departments**
-   - **Purpose**: Highlights age distribution by department.
-   - **X-Axis**: Department.
-   - **Y-Axis**: Employee Count.
-   - **Details**: Segmented by age groups, this visual provides insights on age diversity within departments.
-
-6. **Histogram**: **Performance Score Distribution**
-   - **Purpose**: Shows the distribution of performance scores across the organization.
-   - **X-Axis**: Performance Score.
-   - **Y-Axis**: Frequency of Employees.
-   - **Details**: Helps HR teams see if most employees are within a specific performance range or spread widely.
-
-7. **Column Chart**: **Average Tenure by Department**
-   - **Purpose**: Shows retention patterns by illustrating the average tenure for each department.
-   - **X-Axis**: Department.
-   - **Y-Axis**: Average Tenure (years).
-   - **Details**: Helps identify departments with high or low retention rates.
-
-8. **Scatter Plot**: **Satisfaction Score vs. Performance Score**
-   - **Purpose**: Examines the relationship between employee satisfaction and performance.
-   - **X-Axis**: Satisfaction Score.
-   - **Y-Axis**: Performance Score.
-   - **Details**: Color-coded by department, it reveals patterns between satisfaction and performance levels.
+- **X-Axis**: Department names (HR, IT, Marketing, Finance, Sales)
+- **Y-Axis**: Sum of Satisfaction Scores
 
 ---
 
-## **6. Implementation Steps**
+### 3. Count of Employee_ID by Department (Scrollable List)
 
-### **6.1 Data Preparation**
-   - **Data Cleaning**: Removing duplicates, handling missing values, and standardizing data types.
-   - **Data Transformation**: Calculating average scores, age groups, and summarizing data as needed.
+**Description**: This component shows the number of employees in each department.
 
-### **6.2 Data Analysis and Chart Creation**
-   - **Software Used**: Power BI for data visualization and dashboard design.
-   - **Steps for Each Visual**:
-      1. **Select Chart Type**: Choose the chart type based on data and visual objective.
-      2. **Assign Fields**: Assign data columns to the appropriate axes.
-      3. **Format and Style**: Apply color coding, titles, and labels for clarity.
-
-### **6.3 Dashboard Assembly**
-   - Organize visuals logically (e.g., headcount and satisfaction metrics at the top, diversity and retention metrics below).
-   - Add filters for slicing data by department, gender, age group, and other relevant fields.
-
-### **6.4 Review and Testing**
-   - **Quality Check**: Ensure data accuracy and verify alignment of visuals with data points.
-   - **User Testing**: Validate ease of interpretation by potential users or HR stakeholders.
+**Purpose**: Provides a quick reference for headcount in each department, which is useful for understanding department sizes and comparing against performance or satisfaction metrics.
 
 ---
 
-## **7. Insights and Interpretation**
+### 4. Count of Gender by Gender (Pie Chart)
 
-   - **Headcount Trends**: (Describe any observed trends and implications).
-   - **Departmental Diversity**: (Discuss age and gender diversity findings).
-   - **Satisfaction and Performance Correlation**: (Summarize the relationship between satisfaction and performance scores).
+**Description**: A pie chart that displays the gender distribution of employees across the organization.
 
----
-
-## **8. Challenges and Solutions**
-   - **Data Limitations**: Address any constraints due to sample size or data type limitations.
-   - **Design Adjustments**: Note any design changes made based on testing feedback.
+**Purpose**: Useful for diversity tracking, as it shows the percentage of employees by gender, which helps in evaluating gender representation in the company.
 
 ---
 
-## **9. Conclusion**
-   - **Summary**: Provide a summary of key findings and the dashboard’s value to HR planning.
-   - **Future Improvements**: Suggest potential future enhancements, such as adding additional filters or integrating live data sources.
+### 5. Sum of Satisfaction Score (Donut Chart)
+
+**Description**: This donut chart shows the total Satisfaction Score across all departments.
+
+**Purpose**: This is an at-a-glance indicator of overall employee satisfaction in the company.
 
 ---
 
-## **Appendix**
-   - **Data Dictionary**: Definitions for each field used in the dataset.
-   - **References**: List any references or resources used in the project.
+### 6. Sum of Performance Score by Satisfaction Score and Department (Stacked Bar Chart)
+
+**Description**: This stacked bar chart visualizes the relationship between Satisfaction Scores and Performance Scores, segmented by department.
+
+**Purpose**: This chart provides deeper insights into how employee satisfaction correlates with performance, broken down by department, which helps HR understand areas with strong satisfaction-performance alignment.
+
+- **X-Axis**: Satisfaction Score (1 to 5)
+- **Y-Axis**: Sum of Performance Scores, broken down by Department (Finance, HR, IT, Marketing, Sales)
+
+---
+![{5217ED8C-7B90-47CB-B0F2-C47B0DF1BB58}](https://github.com/user-attachments/assets/ae45bbb9-9804-43e5-b03c-84ad1f194f36)
+
+## Analysis & Insights
+
+Using this dashboard, the HR team can derive valuable insights:
+
+- **Department Performance**: By comparing performance scores across departments, HR can identify areas for improvement and departments that are high-performing.
+- **Satisfaction Levels**: Satisfaction scores across departments can reveal departments with lower morale or engagement, prompting targeted HR interventions.
+- **Diversity Analysis**: Gender distribution can be used to ensure diversity in the workforce and address any gender imbalances.
+- **Retention Indicators**: Satisfaction and performance correlations can be early indicators of employee retention, helping HR to proactively address any potential issues.
+
+---
+
+## Future Enhancements
+
+For future iterations, consider adding the following:
+
+- **Tenure**: Add tenure data to understand satisfaction and performance trends relative to employee tenure.
+- **Age & Education**: Include age and education level for a more detailed diversity analysis.
+- **Trends Over Time**: Implement time-series analysis to track satisfaction and performance changes over time.
+
+---
+
+## Conclusion
+
+This HR dashboard provides a comprehensive, data-driven approach to workforce management, helping HR make decisions that improve employee satisfaction, productivity, and diversity. The visualizations simplify complex data, enabling quick insights for effective workforce planning.
 
 ---
