@@ -1,5 +1,3 @@
-Here's a project documentation outline for your HR dashboard project, formatted with sections that you can fill with your insights and images.
-
 ---
 
 # **HR Dashboard Project Documentation**
@@ -140,5 +138,3 @@ Here's a project documentation outline for your HR dashboard project, formatted 
    - **References**: List any references or resources used in the project.
 
 ---
-
-This structure will provide clarity and organization for your HR dashboard project documentation, and you can insert images of each chart into the respective sections. Let me know if you'd like further customization!
