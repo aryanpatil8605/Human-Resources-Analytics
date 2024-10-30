@@ -1,4 +1,3 @@
----
 
 # **HR Dashboard Project Documentation**
 
